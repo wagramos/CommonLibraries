@@ -2,7 +2,6 @@
 
 namespace Wagram.CommonLibraries.Interfaces.Sql
 {
-    public class Class1
-    {
-    }
+    public interface IArgs
+    {}
 }
