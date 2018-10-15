@@ -2,17 +2,16 @@ using System.Threading.Tasks;
 
 namespace Wagram.CommonLibraries.Interfaces.Sql
 {
-    public interface ICommand<TArg>
-        where TArg : IArgs
+    public interface ICommand<TArgs>
+        where TArgs : IArgs
     {
-         Task ExecuteAsync(TArg arg);
+         Task ExecuteAsync(TArgs args);
     }
 
-    public interface ICommand<TArg, TResult>
-
-        where TArg : IArgs
+    public interface ICommand<TArgs, TResult>
+        where TArgs : IArgs
     {
-         Task<TResult> ExecuteAsync(TArg arg);
+         Task<TResult> ExecuteAsync(TArgs args);
     }
 
 }
