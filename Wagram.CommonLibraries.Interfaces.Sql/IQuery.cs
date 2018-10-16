@@ -1,8 +1,10 @@
+using System.Threading.Tasks;
+
 namespace Wagram.CommonLibraries.Interfaces.Sql
 {
     public interface IQuery<TArgs, TResult>
         where TArgs : IArgs
     {
-         TResult Get(TArgs args);
+         Task<TResult> GetAsync(TArgs args);
     }
 }
