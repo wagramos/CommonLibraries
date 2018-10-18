@@ -1,7 +1,7 @@
 namespace Wagram.CommonLibraries.Sql.SqlServer.Infrastructure.Configuration
 {
-    public class SqlConfiguration
+    public interface ISqlConfiguration
     {
-        public string ConnectionString { get; set; }
+        string ConnectionString { get; }
     }
 }
